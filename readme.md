@@ -77,8 +77,8 @@ so it is kind of useless at the moment. But still: Here is how you can test it:
   Look at Picture 1 to see the options you need to pass to the programs.
 
 [Picture 1](https://raw.githubusercontent.com/za-uz/sinpy/master/how-to-use1.png)
-[Picture 2](https://raw.githubusercontent.com/za-uz/sinpy/master/how-to-use1.png)
-[Picture 3](https://raw.githubusercontent.com/za-uz/sinpy/master/how-to-use1.png)
+[Picture 2](https://raw.githubusercontent.com/za-uz/sinpy/master/how-to-use2.png)
+[Picture 3](https://raw.githubusercontent.com/za-uz/sinpy/master/how-to-use3.png)
 
 If you have only one chck.py process started and you press Enter a lot on the
 gensissender.py, you can see, that the chck cannot keep up.
