@@ -85,7 +85,7 @@ gensissender.py, you can see, that the chck cannot keep up.
 
 ---
 
-If you have any questions about anything, feel free
+If you have any questions about anything, feel free to open an issue or talk to me on the Iota Discord.
 
 ---
 
