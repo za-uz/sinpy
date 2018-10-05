@@ -51,7 +51,7 @@ Other components will/could include:
  * Bundle Validation
  * Bundle Confirmation (Milestones, etc.)
  * Snapshots
- * Some kind of IXI-Module parser
+ * Some kind of IXI-Module interpreter
  * REST-API
  * Pearldiver(s)
 
