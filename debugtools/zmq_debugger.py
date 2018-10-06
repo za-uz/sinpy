@@ -1,5 +1,5 @@
 """
-sinpy/dbugco/gpdb - General Purpose Debugger
+zmq_debugger - General Purpose ZeroMQ Debugger
 
 Usage:
   gpdb -s TYPE -e ENDPOINT (-b|-c) (-i|-o) [-x] [-t TOPIC]

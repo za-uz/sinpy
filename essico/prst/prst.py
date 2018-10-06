@@ -44,7 +44,7 @@ def main():
     rep_socket = context.socket(zmq.REP)
     rep_socket.bind(arguments['-p'])
 
-    db_conn = sqlite3.connect(arguments['-d'], check_same_thread=False)
+    db_conn = sqlite3.connect(arguments['-d'])
     cursor = db_conn.cursor()
     last_commit = time.time()
     cursor.execute(CREATE_TABLE_STMT)
@@ -87,3 +87,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+

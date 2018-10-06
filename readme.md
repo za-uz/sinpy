@@ -43,7 +43,7 @@ They are connected to each other like this:
 The REQ, REP, PUB, SUB, etc. represent 0MQ socket types. The components that
 have a dot bind() the ones without a dot on their side connect().
 
-![architecture](./architecture.svg)
+![Architecture](https://svgshare.com/i/8by.svg)
 
 Other components will/could include:
  * iri_recv.py
@@ -76,9 +76,9 @@ so it is kind of useless at the moment. But still: Here is how you can test it:
 
   Look at Picture 1 to see the options you need to pass to the programs.
 
-[Picture 1](./how-to-use1.png)
-[Picture 2](./how-to-use2.png)
-[Picture 3](./how-to-use3.png)
+[Picture 1](https://imgur.com/Bw0IXQd.png)
+[Picture 2](https://imgur.com/WVTcJMa.png)
+[Picture 3](https://imgur.com/CJ8If0S.png)
 
 If you have only one chck.py process started and you press Enter a lot on the
 gensissender.py, you can see, that the chck cannot keep up.

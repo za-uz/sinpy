@@ -1,5 +1,5 @@
 """
-dbugco/rqrp - REQ-REP Socket debugger
+reqrep_debugger - REQ-REP Socket debugger
 
 Usage:
   rqrp -s TYPE -e ENDPOINT (-b|-c) [-x] 

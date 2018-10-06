@@ -65,7 +65,6 @@ def main():
             if response == b'n':
                 continue
 
-            print('srvvd all')
             push_socket.send(bytes(tx))
 
 
