@@ -1,5 +1,7 @@
 # SINPY
 
+> More information can be found in the [SIN Wiki](https://github.com/za-uz/sin/wiki).
+
 SINPY stands  for the PYthon version of a "Scalable Iota Node". It is supposed
 to be an Iota Full Node consisting of multiple Python scripts which can
 communicate with each other via [0MQ][1]. They can also communicate with
