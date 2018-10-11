@@ -19,6 +19,7 @@ import zmq
 import sqlite3
 from iotautils import Quatrits
 import time
+import os
 
 QTX_HASH_SIZE = 61
 QTX_SIZE = 2005
@@ -36,6 +37,8 @@ def main():
 
     if arguments['-p'] == None:
         arguments['-p'] = 'ipc:///tmp/feeds/sin/prst/0'
+        if not os.path.exists('/tmp/feeds/sin/prst'):
+            os.makedirs('/tmp/feeds/sin/prst')
     if arguments['-d'] == None:
         arguments['-d'] = './iota.db'
 

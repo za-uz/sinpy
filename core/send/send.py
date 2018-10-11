@@ -15,6 +15,7 @@ Examples:
 """
 
 from docopt import docopt
+import os
 import zmq
 
 def main():
@@ -22,6 +23,8 @@ def main():
 
     if arguments['-f'] == None:
         arguments['-f'] = "ipc:///tmp/feeds/sin/send/0"
+        if not os.path.exists('/tmp/feeds/sin/send'):
+            os.makedirs('/tmp/feeds/sin/send')
 
     context = zmq.Context()
     

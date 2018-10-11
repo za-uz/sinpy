@@ -10,7 +10,6 @@ Options:
                 More info here: http://api.zeromq.org/4-2:zmq-bind
   -t ENDPOINT   Local endpoint to PUSH transactions to.
                 Default is ipc:///tmp/feeds/sin/recv/0
-                More info here: http://api.zeromq.org/4-2:zmq-connect
 
 Examples:
   recv -f tcp://*:14637 -t ipc:///tmp/feeds/sin/recv/0
@@ -25,9 +24,11 @@ def main():
 
     if arguments['-t'] == None:
         arguments['-t'] = "ipc:///tmp/feeds/sin/recv/0"
+        if not os.path.exists('/tmp/feeds/sin/recv'):
+            os.makedirs('/tmp/feeds/sin/recv')
     if arguments['-f'] == None:
         arguments['-f'] = "tcp://*:14637"
-
+    
     context = zmq.Context()
 
     sub_socket = context.socket(zmq.SUB)
