@@ -37,7 +37,7 @@ def main():
 
     push_socket = context.socket(zmq.PUSH)
     push_socket.bind(arguments['-t'])
-    
+
     print("recv started.")
 
     try:

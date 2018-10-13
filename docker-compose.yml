@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+        recv:
+                build: ./core/recv
+                ports:
+                        - 14637:14637
+        chck: 
+                build: ./core/chck
+        prst:
+                build: ./core/prst
+        send:
+                build: ./core/send
+                extra_hosts:
+                        - myhost:172.17.0.1

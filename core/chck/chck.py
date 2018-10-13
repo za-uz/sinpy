@@ -40,6 +40,8 @@ def main():
 
     req_socket = context.socket(zmq.REQ)
     req_socket.connect(arguments['-p'])
+   
+    print(arguments)
 
     try:
         while True:
@@ -65,6 +67,7 @@ def main():
             if response == b'n':
                 continue
 
+            print('Transaction survived.')
             push_socket.send(bytes(tx))
 
 

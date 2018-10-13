@@ -28,8 +28,8 @@ def main():
 
     context = zmq.Context()
     
-    sub_socket = context.socket(zmq.PULL)
-    sub_socket.bind(arguments['-f'])
+    pull_socket = context.socket(zmq.PULL)
+    pull_socket.bind(arguments['-f'])
 
     neighbor_sockets = []
     for n in arguments['-n'].split():
@@ -41,12 +41,12 @@ def main():
 
     try:
         while True:
-            packet = sub_socket.recv()
+            packet = pull_socket.recv()
             for s in neighbor_sockets:
                 s.send(packet)
     except KeyboardInterrupt:
         print('\nShutting down...')
-        sub_socket.close()
+        pull_socket.close()
         for s in neighbor_sockets:
             s.close()
         context.destroy()
